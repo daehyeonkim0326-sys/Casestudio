@@ -1,0 +1,15 @@
+@use '../../assets/scss/mixins' as *;
+header {
+    color: var(--color-header);
+    padding: 2rem;
+div.header-top{
+    @include flex-layout(row,space-between);
+    img{height: 2.5rem; cursor: pointer;}
+    .cart-icon{
+        font-size: 2rem;
+        cursor: pointer;
+        color: pink;
+    }
+
+}
+}

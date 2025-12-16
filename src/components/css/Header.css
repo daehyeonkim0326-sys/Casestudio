@@ -1,0 +1,20 @@
+header {
+  color: var(--color-header);
+  padding: 2rem;
+}
+header div.header-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+header div.header-top img {
+  height: 2.5rem;
+  cursor: pointer;
+}
+header div.header-top .cart-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  color: pink;
+}/*# sourceMappingURL=Header.css.map */
