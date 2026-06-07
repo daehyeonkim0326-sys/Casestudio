@@ -1,7 +1,9 @@
 import "./section.scss";
 import listData from "../../assets/data/categories.json";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 const CategorySection = () => {
+  const Navigate = useNavigate();
   return (
     <section id="category">
        <div className="collection">
@@ -13,11 +15,9 @@ const CategorySection = () => {
             <ul>
               {listData.map((item,idx)=>{
                 return(
-                  <li key={idx}>
-                    <Link to="파우치">
+                  <li key={idx} onClick={()=>{Navigate(`/category/${item.id}`)}}>
                       <img src={require(`../../assets/images/circle_small/${item.image}`)} alt={item.title}/>
                       <p>{item.title}</p>
-                    </Link>
                   </li>
                 )
               })}
