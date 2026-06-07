@@ -15,6 +15,7 @@ nav{
             font-size: 2rem;
             line-height: 0;
             color: var(--color-primary);;
+            transition: 0.3s;
             &:hover{
                 color: var(--color-sub1);
             }
@@ -24,20 +25,35 @@ nav{
         }
     }
     div.menu-wrap{
-        @include desktop{
-            @include flex-layout(row,space-between);
-        }
         position: absolute;
         width: 100%;
         left: 0;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+        &.on{
+            opacity: 1;
+            overflow: visible;
+            max-height: auto;
+        }
+        @include desktop{
+            @include flex-layout(row,space-between);
+            display: flex !important; //무조건 실행
+            overflow: visible;
+            height: auto;
+            opacity: 1;
+            top: 1.5rem;
+    }
     }
     ul{
-        @include desktop{
-            @include flex-layout();
-        }
         background-color: var(--color-gray);
         padding: 1rem;
         li{padding: 0.5rem 0;}
+        @include desktop{
+            background: none;
+            @include flex-layout();
+        }
     }
     ul.menu-top{
         font-size: 1.1rem;
@@ -58,6 +74,9 @@ nav{
                 color: var(--color-sub1);
                 text-decoration: underline;
             }
+        }
+        @include desktop{
+            border-bottom: none;
         }
     }
 }

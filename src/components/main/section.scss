@@ -1,0 +1,111 @@
+@use "../../assets/scss/mixins" as*;
+#banner{
+.box{
+    height: 300px;
+    width: 90%;
+    max-width: 1024px;
+    margin: 2rem auto;
+    background-color: var(--color-sub2);
+    @include flex-layout(column,flex-end,flex-start);
+    @include desktop{
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .txt-box{
+        width: 100%;
+        padding: 1rem 2rem;
+        background-color: var(--color-header);
+        font-size: 12px;
+        @include flex-layout(column,center);
+        img{display: none;height: 50px;}
+        button{
+            display: inline-block;
+            cursor: pointer;
+            background-color: var(--color-sub1);
+            color: var(--color-header);
+            border: none;
+            padding: 1rem;
+            border-radius: 14px;
+            outline: none;
+            &:hover{
+                outline: 1px solid steelblue ;
+            }
+        }
+        @include desktop{
+            width: 400px;
+            margin-left: 50px;
+            @include flex-layout(column,center,center);
+            h3{text-align: center;}
+            img{
+                display: block;
+                height: 2rem;
+            }
+        }
+    }
+}
+}
+#category{
+    @include flex-layout(column,flex-start);
+    text-align: center;
+    margin: 1rem auto;
+    .collection{
+        h3{
+            margin: 1rem 0;
+            &:nth-child(1){
+                display: inline-block;
+                padding: 0.5rem 1rem;
+                border-radius: 100px;
+                color: var(--color-header);
+                background-color: var(--color-sub2);
+            }
+        }
+        p{
+            color: var(--color-gray);
+        }
+        padding: 1rem;
+    }
+    ul{
+        margin: 1rem 0;
+        @include flex-layout();
+        flex-wrap: wrap;
+        gap: 2rem;
+        li{
+            cursor: pointer;
+            transition: 0.5s;
+            img{
+                transform: 0.5s;
+                border-radius: 50%;
+            }
+            &:hover{
+                transform: translateY(-10px);
+                img{
+                    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+#product{
+    width: 80%;
+    max-width: 1024px;
+    margin: 5rem auto;
+    text-align: center;
+    
+    p{
+        margin: 1rem 0;
+        color: var(--color-gray);
+    }
+    .product-grid{
+        margin: 5rem 0;
+        text-align: center;
+        display: grid;
+        gap: 1.5rem;
+        //모바일
+        grid-template-columns: repeat(2,1fr);
+        @include desktop{
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
+}

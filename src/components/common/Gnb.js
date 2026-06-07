@@ -17,8 +17,7 @@ const Gnb = () => {
             </button>
             <span>감성별 추천</span>
         </div>
-        {isShow &&(
-        <div className="menu-wrap">
+        <div className={`menu-wrap ${isShow ? 'on' : ''}`}>
             <ul className="menu-top">
                 <li>전체보기👁‍🗨</li>
                 <li>인기박스💖</li>
@@ -33,8 +32,8 @@ const Gnb = () => {
                 <li>다꾸박스🗯</li>
             </ul>
         </div>
-        )
-}
+        
+
     </nav>
   )  
 }
