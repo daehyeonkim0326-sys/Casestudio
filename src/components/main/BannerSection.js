@@ -8,7 +8,7 @@ const slides = [
   {img:[case2]}
 ]
 const BannerSection = () => {
-  const [slide,setSlide] =useState(0);
+  const [slide,setSlide] =useState(0); 
   useEffect(()=>{
     const timer = setInterval(()=>{
       setSlide((prev)=>(prev + 1) % slides.length);

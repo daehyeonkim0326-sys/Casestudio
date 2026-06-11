@@ -12,7 +12,7 @@ const ProductSection = ({onAdd}) => {
     // slice처리를 해서 베스트 아이템을 8개만.
     setBestItems(items.slice(0,8));
   },[]);
-  return (
+  return ( 
     <section id="product">
       <h2>BEST SELLERS</h2>
       <p>가장 사랑받는 베스트 아이템을 만나보세요</p>
