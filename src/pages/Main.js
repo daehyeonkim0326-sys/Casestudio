@@ -1,5 +1,4 @@
 import BannerSection from "../components/main/BannerSection"
-import BlogSection from "../components/main/BlogSection"
 import CategorySection from "../components/main/CategorySection"
 import ProductSection from "../components/main/ProductSection"
 
@@ -9,7 +8,6 @@ const Main = ({onAdd}) => {
         <BannerSection />
         <CategorySection />
         <ProductSection onAdd={onAdd}/>
-        <BlogSection />
     </div>
   )
 }
