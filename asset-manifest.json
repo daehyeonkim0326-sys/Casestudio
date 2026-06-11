@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/Casestudio/static/css/main.630173ad.css",
+    "main.js": "/Casestudio/static/js/main.bad83654.js",
+    "static/media/caseimg2.png": "/Casestudio/static/media/caseimg2.26679bedfab42b10c201.png",
+    "static/media/caseimg1.png": "/Casestudio/static/media/caseimg1.f65e4adbc7aad2fb7f24.png",
+    "static/media/logo.png": "/Casestudio/static/media/logo.170cd4bd1c9abe82fc15.png",
+    "static/media/new-item08-1.jpg": "/Casestudio/static/media/new-item08-1.a84768a1681b65f29fd7.jpg",
+    "static/media/new-item04-1.jpg": "/Casestudio/static/media/new-item04-1.5014f35faa1308cd07d9.jpg",
+    "static/media/new-item06-2.jpg": "/Casestudio/static/media/new-item06-2.26fdedd7908416a62e66.jpg",
+    "static/media/new-item08-2.jpg": "/Casestudio/static/media/new-item08-2.570341bdfc6395d4d67d.jpg",
+    "static/media/new-item06-1.jpg": "/Casestudio/static/media/new-item06-1.1e8a5e205ae9272089ad.jpg",
+    "static/media/new-item07-1.jpg": "/Casestudio/static/media/new-item07-1.1b73a64cc025196cac90.jpg",
+    "static/media/new-item01-2.jpg": "/Casestudio/static/media/new-item01-2.165e55f4ad134535a0dd.jpg",
+    "static/media/circle-3.png": "/Casestudio/static/media/circle-3.c1b67f47646d6daf628d.png",
+    "static/media/new-item07-2.jpg": "/Casestudio/static/media/new-item07-2.36b94e279c17c9268ef0.jpg",
+    "static/media/new-item04-2.jpg": "/Casestudio/static/media/new-item04-2.7ed7644f5a606ddbbc95.jpg",
+    "static/media/new-item05-1.jpg": "/Casestudio/static/media/new-item05-1.db72a018b7305c8613ee.jpg",
+    "static/media/new-item05-2.jpg": "/Casestudio/static/media/new-item05-2.3852cf938b83d4dee8a4.jpg",
+    "static/media/new-item02-2.jpg": "/Casestudio/static/media/new-item02-2.eab3e5fedd88e4633ac9.jpg",
+    "static/media/new-item01-1.jpg": "/Casestudio/static/media/new-item01-1.b89b6d47497d10ec6c3a.jpg",
+    "static/media/new-item02-1.jpg": "/Casestudio/static/media/new-item02-1.0276282410787e08734c.jpg",
+    "static/media/new-item03-1.jpg": "/Casestudio/static/media/new-item03-1.8c03773378af6c19b027.jpg",
+    "static/media/new-item03-2.jpg": "/Casestudio/static/media/new-item03-2.fb7c77f3aad92cbe9f6d.jpg",
+    "static/media/circle-2.png": "/Casestudio/static/media/circle-2.5125d3b4e2a0d409fc55.png",
+    "static/media/circle-5.png": "/Casestudio/static/media/circle-5.bddea5f4aa748fab554a.png",
+    "index.html": "/Casestudio/index.html",
+    "main.630173ad.css.map": "/Casestudio/static/css/main.630173ad.css.map",
+    "main.bad83654.js.map": "/Casestudio/static/js/main.bad83654.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.630173ad.css",
+    "static/js/main.bad83654.js"
+  ]
+}
