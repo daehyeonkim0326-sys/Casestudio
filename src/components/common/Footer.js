@@ -8,7 +8,7 @@ const Footer = () => {
         <p>대표자:김대현</p>
         <p>주소:수원시 00동</p>
       <p className="pro">
-        © 2025 CASE SUTDIO. All Rights Reserve.<br/>
+        © 2025 CASE STUDIO. All Rights Reserved.<br/>
         본 사이트는 포트폴리오 목적으로 제작된 비상업적 프로젝트입니다.
       </p>
       </div>
