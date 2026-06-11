@@ -1,0 +1,19 @@
+@use '../../assets/scss/mixins' as *;
+footer{
+    @include flex-layout(column,space-between);
+    bottom: 0;
+    padding: 1rem;
+    width: 100%;
+    background-color: #1d2133;
+    color: #fff;
+    .info{
+        @include flex-layout(row,space-between,top);
+        width: 100%;
+        .name{
+            .pro{
+                padding: 1rem 0;
+            }
+        }
+    }
+    
+}

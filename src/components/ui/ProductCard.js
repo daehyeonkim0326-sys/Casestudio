@@ -29,7 +29,7 @@ const ProductCard = ({item,onAdd}) => {
         <p>￦{Number(item.price).toLocaleString()}</p>
       </div>
       <p className="add-cart" onClick={handleClick}>Add Cart</p>
-    </div>
+    </div> 
   )
 }
 

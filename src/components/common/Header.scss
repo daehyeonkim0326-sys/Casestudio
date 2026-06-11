@@ -3,14 +3,36 @@ header {
     background-color: rgba(255,255,255,0.43);
     backdrop-filter: blur(255,255,255,1);
     padding: 2rem;
+    @include desktop{
+    transition: 0.5s;
+    height: 20vh;
+}
 div.header-top{
     @include flex-layout(row,space-between);
-    img{height: 2.5rem; cursor: pointer;}
-    .cart-icon{
-        font-size: 2rem;
-        cursor: pointer;
-        color: pink;
+    img{height: 3rem; cursor: pointer;}
+    .menu{
+        @include flex-layout(row,center,cneter);
+        padding: 0 1rem;
+        
+        .cart-icon{
+            @include flex-layout(column,center,center);
+            // position: absolute;
+            font-size: 2rem;
+            transition: 0.5s;
+            padding: 1rem;
+            cursor: pointer;
+            &:hover{
+                color: var(--color-sub1);
+            }
+        }
+        @include desktop {
+            .nav{
+            display: none;
+        }
+        }
     }
-
+}
+.mobile{
+display: none;
 }
 }

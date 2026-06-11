@@ -1,7 +1,25 @@
 @use "../assets/scss/mixins" as *;
 .cart-page{
   margin: 2rem 0;
+  height: 100vh;
   h2{text-align: center;}
+  .cart-zero{
+    @include flex-layout(column);
+    padding: 2rem 0;
+    button{
+            display: inline-block;
+            cursor: pointer;
+            background-color: var(--color-sub1);
+            color: var(--color-header);
+            border: none;
+            padding: 1rem;
+            border-radius: 14px;
+            outline: none;
+            &:hover{
+                outline: 1px solid steelblue ;
+            }
+        }
+  }
   p{text-align: center;}  
 }
 .cart-wrap{
@@ -17,6 +35,13 @@
         width: 20%;
         img{width: 100%;}
       }
+      .info-box{
+        font-size: 12px;
+        width: 50%;
+        @include desktop{
+          font-size: 24px;
+        }
+      }
       .price-wrap{
         flex: 1;
         @include flex-layout(row,flex-start);
@@ -25,17 +50,67 @@
           width: 30px;
           text-align: center;
         }
+        .count-wrap{
+          @include flex-layout();
+          width: 40%;
+        }
         button{ 
-          width: 30px;
+          @include flex-layout(column);
+          width: 10px;
+          height: 10px;
+          @include desktop{
+            width: 30px;
+            height: 30px;
+
+          }
         }
       }
       > button{
-        width: 100px;
+        width: 50px;
+        @include desktop{
+          width: 100px;
+
+        }
       }
     }
   }
   .cart-summary{
-    .summary-wrap{}
-    .summary-total{}
+    @include flex-layout(row,space-between);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(169, 179, 235);
+    backdrop-filter: blur(3px);
+    box-shadow: 1px 2px 2px #4247da;
+    padding: 1rem;
+    color: #062678;
+    z-index: 9999;
+    .summary-total{
+      @include flex-layout(); 
+      padding: 1rem 0;
+      gap: 1rem;
+    }
+    @include desktop{
+      @include flex-layout(column);
+      position: relative;
+      width: 25%;
+    h3{ padding: 1rem 0;}
+    .summary-total{ 
+      padding: 1rem 0;
+    }
+    }
   }
+  button{
+              display: inline-block;
+              cursor: pointer;
+              background-color: var(--color-sub1);
+              color: var(--color-header);
+              border: none;
+              padding: 0.5rem ;
+              border-radius: 14px;
+              outline: none;
+              &:hover{
+                  outline: 1px solid steelblue ;
+              }
+          }
 }

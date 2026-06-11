@@ -3,6 +3,12 @@ header {
   backdrop-filter: blur(255, 255, 255, 1);
   padding: 2rem;
 }
+@media all and (min-width: 1024px) {
+  header {
+    transition: 0.5s;
+    height: 20vh;
+  }
+}
 header div.header-top {
   display: flex;
   flex-direction: row;
@@ -11,11 +17,36 @@ header div.header-top {
   gap: 1rem;
 }
 header div.header-top img {
-  height: 2.5rem;
+  height: 3rem;
   cursor: pointer;
 }
-header div.header-top .cart-icon {
+header div.header-top .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: cneter;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+header div.header-top .menu .cart-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   font-size: 2rem;
+  transition: 0.5s;
+  padding: 1rem;
   cursor: pointer;
-  color: pink;
+}
+header div.header-top .menu .cart-icon:hover {
+  color: var(--color-sub1);
+}
+@media all and (min-width: 1024px) {
+  header div.header-top .menu .nav {
+    display: none;
+  }
+}
+header .mobile {
+  display: none;
 }/*# sourceMappingURL=Header.css.map */

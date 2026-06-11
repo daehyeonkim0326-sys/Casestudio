@@ -1,5 +1,6 @@
 .category-page {
   width: 90%;
+  height: 100vh;
   margin: 3rem auto;
 }
 .category-page h2, .category-page p {

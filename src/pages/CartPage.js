@@ -50,7 +50,7 @@ useEffect(() => {
                 <h3>{item.title}</h3>
 
                 <div className="price-wrap">
-                  <p>￦ {Number(item.price).toLocaleString()}</p>
+                  {/* <p>￦ {Number(item.price).toLocaleString()}</p> */}
 
                   <div className="count-wrap">
                     <button onClick={() => onUpdate(item.id, "minus")}>-</button>
@@ -69,6 +69,7 @@ useEffect(() => {
         </ul>
 
         <div className="cart-summary">
+          <div className="ex">
           <h3>주문 예상 금액</h3>
 
           <div className="summary-wrap">
@@ -80,13 +81,14 @@ useEffect(() => {
             <span>배송비</span>
             <span>￦ 0 (무료)</span>
           </div>
+          </div>
 
           <div className="summary-total">
             <span>총 결제 금액</span>
             <span>￦ {Number(totalPrice).toLocaleString()}</span>
+          <button>주문하기</button>
           </div>
 
-          <button>주문하기</button>
         </div>
       </div>
   )}

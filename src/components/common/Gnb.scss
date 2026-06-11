@@ -1,20 +1,20 @@
 @use "../../assets/scss/mixins" as *;
 nav{
+    @include flex-layout(row,center);
     position: relative;
-    padding: 1rem 0;
-    div.mobile-toggle{
+    div.mobile{
+        @include flex-layout(column,center);
         cursor: pointer;
-        @include flex-layout(row,flex-start);
         color: var(--color-dark);
         @include desktop{
             display: none;
         }
+        
         button{
             background: none;
             border: none;
             font-size: 2rem;
             line-height: 0;
-            color: var(--color-primary);;
             transition: 0.3s;
             &:hover{
                 color: var(--color-sub1);
@@ -27,12 +27,15 @@ nav{
     div.menu-wrap{
         position: absolute;
         width: 100%;
-        left: 0;
+        right: 0;
+        bottom: 10%;
         opacity: 0;
         max-height: 0;
         overflow: hidden;
         transition: 0.3s;
+        z-index: 9999;
         &.on{
+            width: 300px;
             opacity: 1;
             overflow: visible;
             max-height: auto;
@@ -47,32 +50,59 @@ nav{
     }
     }
     ul{
-        background-color: var(--color-gray);
+        background-color: rgba(168, 170, 227, 0.3);
+        backdrop-filter: blur(3px);
+        box-shadow: 1px 2px 2px #7083d4;
         padding: 1rem;
+        background-color: rgba(130, 134, 237, 0.2);
+        backdrop-filter: blur(3px);
+        box-shadow: 1px 2px 2px #7083d4;
+        color: var(--color-primary);
         li{padding: 0.5rem 0;}
         @include desktop{
             background: none;
+            box-shadow: none;
+            backdrop-filter: none;
             @include flex-layout();
         }
     }
     ul.menu-top{
         font-size: 1.1rem;
+        border-radius: 1rem 1rem 0 0;
         li{
             color: var(--color-dark);
-        border-bottom: 1px solid var(--color-dark);
+            padding: 1rem;
+            border-radius: 1rem;
+            transition: background-color 0.3s ease, 
+            color 0.3s ease, 
+            transeform 0.3s ease-in-out;
+            cursor: pointer;
         &:hover{
+        background-color: rgba(130, 134, 237, 0.2);
+        backdrop-filter: blur(3px);
+        box-shadow: 1px 2px 2px #7083d4;
         color: var(--color-primary);
-        cursor: pointer;
+        
     }
         }
     }
     ul.menu-bottom{
         color: var(--color-dark);
+        border-radius: 0 0 1rem 1rem;
         li{
             cursor: pointer;
+            color: var(--color-dark);
+            padding: 1rem;
+            border-radius: 1rem;
+            transition: background-color 0.3s ease, 
+            color 0.3s ease, 
+            transeform 0.3s ease-in-out;
             &:hover{
-                color: var(--color-sub1);
-                text-decoration: underline;
+                background-color: rgba(130, 134, 237, 0.2);
+                backdrop-filter: blur(3px);
+                box-shadow: 1px 2px 2px #7083d4;
+                color: var(--color-primary);
+                cursor: pointer;
             }
         }
         @include desktop{

@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
-  --color-primary: #FFB3BE;
+  --color-primary: #3875fa56;
   --color-sub1: #C3B8FF;
   --color-sub2: #A8CAE0;
-  --color-bg: #F8EED7;
-  --color-header:#F8F5F6;
+  --color-bg: #ccddff;
+  --color-header:#000000;
   --color-gray: #919090;
   --color-black: #333333;
   --color-dark: #666666;
