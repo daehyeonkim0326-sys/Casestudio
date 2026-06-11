@@ -51,7 +51,7 @@ const App = () => {
   };
 
   return (
-    <BrowserRouter basename="/Lucky-dori">
+    <BrowserRouter basename="/Casestudio">
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Main onAdd={handleAddCart} />} />
