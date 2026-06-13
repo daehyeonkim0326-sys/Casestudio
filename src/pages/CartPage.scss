@@ -84,7 +84,11 @@
     box-shadow: 1px 2px 2px #4247da;
     padding: 1rem;
     color: #062678;
+    font-size: 10px;
     z-index: 9999;
+    @include desktop{
+      font-size: 20px;
+    } 
     .summary-total{
       @include flex-layout(); 
       padding: 1rem 0;

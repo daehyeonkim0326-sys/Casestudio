@@ -12,8 +12,7 @@ div.header-top{
     img{height: 3rem; cursor: pointer;}
     .menu{
         @include flex-layout(row,center,cneter);
-        padding: 0 1rem;
-        
+        padding: 0 1rem;  
         .cart-icon{
             @include flex-layout(column,center,center);
             // position: absolute;

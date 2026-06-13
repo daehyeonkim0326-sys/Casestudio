@@ -50,11 +50,10 @@ nav{
     }
     }
     ul{
-        background-color: rgba(168, 170, 227, 0.3);
         backdrop-filter: blur(3px);
         box-shadow: 1px 2px 2px #7083d4;
         padding: 1rem;
-        background-color: rgba(130, 134, 237, 0.2);
+        background-color: rgba(130, 134, 237, 0.4);
         backdrop-filter: blur(3px);
         box-shadow: 1px 2px 2px #7083d4;
         color: var(--color-primary);
@@ -77,14 +76,14 @@ nav{
             color 0.3s ease, 
             transeform 0.3s ease-in-out;
             cursor: pointer;
-        &:hover{
+        &:hover{ 
         background-color: rgba(130, 134, 237, 0.2);
         backdrop-filter: blur(3px);
         box-shadow: 1px 2px 2px #7083d4;
         color: var(--color-primary);
         
     }
-        }
+        } 
     }
     ul.menu-bottom{
         color: var(--color-dark);

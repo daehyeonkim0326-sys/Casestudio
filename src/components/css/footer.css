@@ -9,6 +9,7 @@ footer {
   width: 100%;
   background-color: #1d2133;
   color: #fff;
+  font-size: 8px;
 }
 footer .info {
   display: flex;
@@ -17,6 +18,11 @@ footer .info {
   align-items: top;
   gap: 1rem;
   width: 100%;
+}
+@media all and (min-width: 1024px) {
+  footer .info {
+    font-size: 16px;
+  }
 }
 footer .info .name .pro {
   padding: 1rem 0;

@@ -6,9 +6,13 @@ footer{
     width: 100%;
     background-color: #1d2133;
     color: #fff;
+    font-size: 8px;
     .info{
         @include flex-layout(row,space-between,top);
         width: 100%;
+        @include desktop{
+            font-size: 16px;
+        } 
         .name{
             .pro{
                 padding: 1rem 0;

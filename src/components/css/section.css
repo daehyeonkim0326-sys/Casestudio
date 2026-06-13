@@ -1,12 +1,22 @@
 #banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   padding: 2rem;
+  width: 100%;
 }
 #banner .box {
   position: relative;
-  width: 100%;
   overflow: hidden;
   border-radius: 2rem;
   z-index: 1;
+}
+@media all and (min-width: 1024px) {
+  #banner .box {
+    width: 80%;
+  }
 }
 #banner .box .track {
   display: flex;
@@ -131,8 +141,9 @@
   background-color: var(--color-sub1);
   color: var(--color-header);
   border: none;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 14px;
+  font-size: 10px;
   outline: none;
 }
 #banner .box .txt-boxmoblie button:hover {
