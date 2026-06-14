@@ -4,7 +4,7 @@ URL:"https://daehyeonkim0326-sys.github.io/Casestudio/"
 
 json data를 활용하여 카테고리 리스트를 만들고 useEffect를 통해 물건이 장바구니에 담기는 기능을 구현한 쇼핑몰 사이트 입니다.
 
-1.진행 기간:2026.11.10~ 2025.11.14 (4일)
+1.진행 기간:2025.11.10~ 2025.11.14 (4일)
 
 2.개발 인원: FrontEnd 1인 (Solo Project)
 
