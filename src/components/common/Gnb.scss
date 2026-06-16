@@ -28,35 +28,46 @@ nav{
         position: absolute;
         width: 100%;
         right: 0;
-        bottom: 10%;
+        top: 10%;
+        transform: translateY(10%);
+        // bottom: 10%;
         opacity: 0;
-        max-height: 0;
+        // max-height: 0;
         overflow: hidden;
         transition: 0.3s;
-        z-index: 9999;
-        &.on{
-            width: 300px;
-            opacity: 1;
-            overflow: visible;
-            max-height: auto;
-        }
-        @include desktop{
-            @include flex-layout(row,space-between);
-            display: flex !important; //무조건 실행
-            overflow: visible;
-            height: auto;
-            opacity: 1;
-            top: 1.5rem;
-    }
-    }
-    ul{
-        backdrop-filter: blur(3px);
+        z-index: 3;
         box-shadow: 1px 2px 2px #7083d4;
+        border-radius: 2rem;
+        box-shadow: 1px 3px 3px ;
         padding: 1rem;
         background-color: rgba(130, 134, 237, 0.4);
         backdrop-filter: blur(3px);
         box-shadow: 1px 2px 2px #7083d4;
         color: var(--color-primary);
+        &.on{
+            width: 300px;
+            opacity: 1;
+            overflow: visible;
+            max-height: auto;
+            z-index: 999;
+        }
+        @include desktop{
+            @include flex-layout(row,space-between);
+            overflow: visible;
+            bottom: 10%;
+            bottom: 10%;
+            max-height: 0;
+            background: none;
+            box-shadow: none;
+            transform: translateY(-40%);
+            height: auto;
+            opacity: 1;
+            top: 1.5rem;
+            
+    }
+    }
+    ul{
+        
         li{padding: 0.5rem 0;}
         @include desktop{
             background: none;
@@ -67,9 +78,8 @@ nav{
     }
     ul.menu-top{
         font-size: 1.1rem;
-        border-radius: 1rem 1rem 0 0;
         li{
-            color: var(--color-dark);
+            color: #fff;
             padding: 1rem;
             border-radius: 1rem;
             transition: background-color 0.3s ease, 
@@ -79,18 +89,21 @@ nav{
         &:hover{ 
         background-color: rgba(130, 134, 237, 0.2);
         backdrop-filter: blur(3px);
-        box-shadow: 1px 2px 2px #7083d4;
-        color: var(--color-primary);
+        
+        color: var(--color-bark);
         
     }
+    @include desktop{
+                 color: var(--color-dark);
+               
+            }
         } 
     }
     ul.menu-bottom{
         color: var(--color-dark);
-        border-radius: 0 0 1rem 1rem;
         li{
             cursor: pointer;
-            color: var(--color-dark);
+            color: #fff;
             padding: 1rem;
             border-radius: 1rem;
             transition: background-color 0.3s ease, 
@@ -100,12 +113,13 @@ nav{
                 background-color: rgba(130, 134, 237, 0.2);
                 backdrop-filter: blur(3px);
                 box-shadow: 1px 2px 2px #7083d4;
-                color: var(--color-primary);
+                color: var(--color-dark);
                 cursor: pointer;
             }
-        }
-        @include desktop{
-            border-bottom: none;
+            @include desktop{
+                 color: var(--color-dark);
+               
+            }
         }
     }
 }
