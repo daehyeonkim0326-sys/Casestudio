@@ -37,18 +37,27 @@ nav div.menu-wrap {
   position: absolute;
   width: 100%;
   right: 0;
-  bottom: 10%;
+  top: 10%;
+  transform: translateY(10%);
   opacity: 0;
-  max-height: 0;
   overflow: hidden;
   transition: 0.3s;
-  z-index: 9999;
+  z-index: 3;
+  box-shadow: 1px 2px 2px #7083d4;
+  border-radius: 2rem;
+  box-shadow: 1px 3px 3px;
+  padding: 1rem;
+  background-color: rgba(130, 134, 237, 0.4);
+  backdrop-filter: blur(3px);
+  box-shadow: 1px 2px 2px #7083d4;
+  color: var(--color-primary);
 }
 nav div.menu-wrap.on {
   width: 300px;
   opacity: 1;
   overflow: visible;
   max-height: auto;
+  z-index: 999;
 }
 @media all and (min-width: 1024px) {
   nav div.menu-wrap {
@@ -57,21 +66,17 @@ nav div.menu-wrap.on {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    display: flex !important;
     overflow: visible;
+    bottom: 10%;
+    bottom: 10%;
+    max-height: 0;
+    background: none;
+    box-shadow: none;
+    transform: translateY(-40%);
     height: auto;
     opacity: 1;
     top: 1.5rem;
   }
-}
-nav ul {
-  backdrop-filter: blur(3px);
-  box-shadow: 1px 2px 2px #7083d4;
-  padding: 1rem;
-  background-color: rgba(130, 134, 237, 0.4);
-  backdrop-filter: blur(3px);
-  box-shadow: 1px 2px 2px #7083d4;
-  color: var(--color-primary);
 }
 nav ul li {
   padding: 0.5rem 0;
@@ -90,10 +95,9 @@ nav ul li {
 }
 nav ul.menu-top {
   font-size: 1.1rem;
-  border-radius: 1rem 1rem 0 0;
 }
 nav ul.menu-top li {
-  color: var(--color-dark);
+  color: #fff;
   padding: 1rem;
   border-radius: 1rem;
   transition: background-color 0.3s ease, color 0.3s ease, transeform 0.3s ease-in-out;
@@ -102,16 +106,19 @@ nav ul.menu-top li {
 nav ul.menu-top li:hover {
   background-color: rgba(130, 134, 237, 0.2);
   backdrop-filter: blur(3px);
-  box-shadow: 1px 2px 2px #7083d4;
-  color: var(--color-primary);
+  color: var(--color-bark);
+}
+@media all and (min-width: 1024px) {
+  nav ul.menu-top li {
+    color: var(--color-dark);
+  }
 }
 nav ul.menu-bottom {
   color: var(--color-dark);
-  border-radius: 0 0 1rem 1rem;
 }
 nav ul.menu-bottom li {
   cursor: pointer;
-  color: var(--color-dark);
+  color: #fff;
   padding: 1rem;
   border-radius: 1rem;
   transition: background-color 0.3s ease, color 0.3s ease, transeform 0.3s ease-in-out;
@@ -120,11 +127,11 @@ nav ul.menu-bottom li:hover {
   background-color: rgba(130, 134, 237, 0.2);
   backdrop-filter: blur(3px);
   box-shadow: 1px 2px 2px #7083d4;
-  color: var(--color-primary);
+  color: var(--color-dark);
   cursor: pointer;
 }
 @media all and (min-width: 1024px) {
-  nav ul.menu-bottom {
-    border-bottom: none;
+  nav ul.menu-bottom li {
+    color: var(--color-dark);
   }
 }/*# sourceMappingURL=Gnb.css.map */

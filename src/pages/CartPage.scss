@@ -1,7 +1,7 @@
 @use "../assets/scss/mixins" as *;
 .cart-page{
   margin: 2rem 0;
-  height: 100vh;
+  height: 200vh;
   h2{text-align: center;}
   .cart-zero{
     @include flex-layout(column);
@@ -15,6 +15,7 @@
             padding: 1rem;
             border-radius: 14px;
             outline: none;
+            z-index: 5;
             &:hover{
                 outline: 1px solid steelblue ;
             }
@@ -58,6 +59,7 @@
           @include flex-layout(column);
           width: 10px;
           height: 10px;
+          z-index: 9999;
           @include desktop{
             width: 30px;
             height: 30px;
@@ -67,6 +69,7 @@
       }
       > button{
         width: 50px;
+        z-index: 5;
         @include desktop{
           width: 100px;
 

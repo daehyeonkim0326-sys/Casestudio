@@ -7,6 +7,7 @@
     position: relative;
     // height: 300px;
     overflow: hidden;
+    height: 300px;
     // background-color: var(--color-sub2);
     border-radius: 2rem;
     z-index:  1;
@@ -21,6 +22,7 @@
     .banner-img {
     position: relative;
   width: 100%;
+  height: 300px;
   flex-shrink: 0;
   object-fit: cover;
  z-index: 1;
@@ -31,6 +33,7 @@
     position: absolute;
     width: 100%;
     bottom: 3%;
+    z-index: 5;
     li{
         cursor: pointer;
         padding: 0.8rem;
@@ -91,9 +94,10 @@
         @include flex-layout(column,center);
         position: absolute;
         font-size: 6px;
-        width: 40%;
+        width: 45%;
         height: 100%;      
         color: #fff;
+        padding: 1rem;
         right:0;
         background-color: rgba(0, 0, 0, 0.2);
         padding: 1rem 0;
@@ -106,7 +110,7 @@
             border: none;
             padding: 0.5rem;
             border-radius: 14px;
-            font-size: 10px;
+            font-size: 8px;
             outline: none;
             &:hover{
                 outline: 1px solid steelblue ;
@@ -122,6 +126,10 @@
     @include flex-layout(column,flex-start);
     text-align: center;
     margin: 1rem auto;
+    font-size: 12px;
+    @include desktop{
+        font-size: 18px;
+    }
     .collection{
         h3{
             margin: 1rem 0;
@@ -165,7 +173,10 @@
     max-width: 1024px;
     margin: 5rem auto;
     text-align: center;
-    
+    font-size: 12px;
+    @include desktop{
+        font-size: 18px;
+    }
     p{
         margin: 1rem 0;
         color: var(--color-gray);
