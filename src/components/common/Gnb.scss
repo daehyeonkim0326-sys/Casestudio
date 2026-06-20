@@ -55,12 +55,12 @@ nav{
             @include flex-layout(row,space-between);
             overflow: visible;
             bottom: 10%;
-            bottom: 10%;
-            max-height: 0;
+            backdrop-filter: none;
+            // max-height: 0;
             background: none;
             box-shadow: none;
-            transform: translateY(-40%);
-            height: auto;
+            // transform: translateY(-40%);
+            // height: 30vh;
             opacity: 1;
             top: 1.5rem;
             
@@ -95,6 +95,7 @@ nav{
     }
     @include desktop{
                  color: var(--color-dark);
+                 
                
             }
         } 

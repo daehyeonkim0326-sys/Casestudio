@@ -6,7 +6,7 @@ header {
 @media all and (min-width: 1024px) {
   header {
     transition: 0.5s;
-    height: 20vh;
+    height: 180px;
   }
 }
 header div.header-top {
